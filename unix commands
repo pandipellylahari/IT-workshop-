@@ -1,0 +1,378 @@
+user@lahari:~$ ls
+ 1.c                calci.java             employee.class      imternal              main3.java          Palin.java        registration.html        Square.java                TrainThread.java
+ addition.java      call.c                 eq.c                in.c                  main56.java         passenger.class   Rethrown.class           stack.c                    Triangle.class
+ add.java           CE.java                eql.java            insert.c              main.class          pat.c             Rethrown.java            stackop.c                  Triangle.java
+ adm.c              Characters.class       eqls.class          inventory.class       Main.class          per.c             reverse.class            std.c                      trigger
+ age.c              Characters.java        eqls.java           java                  main.java           perf.c            reverse.java             strlen.c                   twowheeler.class
+ a.html             circle.class           equ.c               Java.class            Main.java           perfect.c         right.c                  strpalin.c                 upper.class
+ A.java             Circle.class           even.c              Java.java             mean.c              pic.jpg           rom.c                    strse.c                    upper.java
+ alphabets.class    clothing.class         ExceptionLa.class   j.html                ME.java             Pictures          roots.java               struct.c                   vehicle.class
+ alphabets.java     cmp.java               ExceptionLa.java    keyword.class         merge.c             pkg1              sailor                   stud                       vehiclemain.class
+ a.out              cod.c                  exp.c               keyword.java          mult.c              pkg1.java         sampleabstract.class     substring.class            vehiclemain.java
+ arr.c              Commandline.class      expres.c            LarSmall.class        multi.class         pkg2              sampleabstract.java      substring.java             Videos
+ AwtApp.class       commandline.java       fib.c               LarSmall.java         multi.java          pow.c             sampleinheritance.java   Sum.java                   web.html
+ AwtApp.java        con.c                  file11              l.class               multimatrix.java    prime.c           shape.class              Superclass.java            webpage.html
+ AwtProg1.class     ConsumerThread.class   file2:home          length.java           multiply.java       Prime.class       Shape.class              Templates                  WE.class
+ AwtProg1.java      ConsumerThread.java    file4:home          lenth.class           Music               prime.java        shape.java               test11.class               Week1.class
+ biggest.java       Count.class            fopen.py           'Library management'   MyException.class   Prime.java        Shape.java               test11.java                Week1.java
+ binary.c           CSE.java               fourwheeler.class   lin.class             mysql               product.class     shapes                   test12.class               week3.class
+ binary.class       cube.c                 fun.c               lin.java              MyThread.class      profit.c          Simple.class             test12.java                week3.java
+ binary.java        Desktop                gcd.c               list.java             MyThread.java       Public            simple.java              test13.java                week6.class
+ binarysearch.c     dir1                   gcdd.c              l.java                MyWebPage.html      pyfile.txt        Simple.java              test1.java                 week6.java
+ B.java             Documents              get.c               LMS                  'NITHIN 2004'        quad.class        single.c                 test3.class                week8.class
+ boats              dog.class              getchar.c           log.c                 nonrec.c            quad.java         singlell.c               test3.java                 week8.java
+ bookticket.class   Downloads              getch.c             ma.c                  nonrecgcd.c         queue.c           snap                     test4.java                 week9.class
+ bookticket.java    DS                     HE.class            main1.class           numsort.class       quick.c           sort.java                test.class                 week9.java
+ bst1.c             dual                   Hello.class         main1.java            numsort.java        random.class      sph.c                    test.java
+ bst.c              ECE.java               hello.java          main21.class          op.c                random.java       spherev.c                Test.java
+ bubble.c           elect.c                Hello.java          main21.java           operator.c          Rectangle.class   square.c                 TrafficLightsThread.java
+ calcii.java        electronic.class       helloworld.c        main3.class           palindrome.java     rect.class        square.class             TrainThread.class
+user@lahari:~$ cat> file11
+lahari
+student
+rgukt basar
+user@lahari:~$ cat file11
+lahari
+student
+rgukt basar
+user@lahari:~$ cat> file12
+hello 
+user@lahari:~$ pwd
+/home/user
+user@lahari:~$ mkdir dir
+user@lahari:~$ pwd
+/home/user
+user@lahari:~$ cd dir
+user@lahari:~/dir$ pwd
+/home/user/dir
+user@lahari:~/dir$ touch file11
+user@lahari:~/dir$ cat file11
+user@lahari:~/dir$ pwd
+/home/user/dir
+user@lahari:~/dir$ cd dir1
+bash: cd: dir1: No such file or directory
+user@lahari:~/dir$ ps -ef
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 14:48 ?        00:00:00 /sbin/init splash
+root           2       0  0 14:48 ?        00:00:00 [kthreadd]
+root           3       2  0 14:48 ?        00:00:00 [rcu_gp]
+root           4       2  0 14:48 ?        00:00:00 [rcu_par_gp]
+root           6       2  0 14:48 ?        00:00:00 [kworker/0:0H-events_highpri]
+root           9       2  0 14:48 ?        00:00:00 [mm_percpu_wq]
+root          10       2  0 14:48 ?        00:00:00 [rcu_tasks_rude_]
+root          11       2  0 14:48 ?        00:00:00 [rcu_tasks_trace]
+root          12       2  0 14:48 ?        00:00:00 [ksoftirqd/0]
+root          13       2  0 14:48 ?        00:00:00 [rcu_sched]
+root          14       2  0 14:48 ?        00:00:00 [migration/0]
+root          15       2  0 14:48 ?        00:00:00 [idle_inject/0]
+root          16       2  0 14:48 ?        00:00:00 [cpuhp/0]
+root          17       2  0 14:48 ?        00:00:00 [cpuhp/1]
+root          18       2  0 14:48 ?        00:00:00 [idle_inject/1]
+root          19       2  0 14:48 ?        00:00:00 [migration/1]
+root          20       2  0 14:48 ?        00:00:00 [ksoftirqd/1]
+root          22       2  0 14:48 ?        00:00:00 [kworker/1:0H-kblockd]
+root          23       2  0 14:48 ?        00:00:00 [cpuhp/2]
+root          24       2  0 14:48 ?        00:00:00 [idle_inject/2]
+root          25       2  0 14:48 ?        00:00:00 [migration/2]
+root          26       2  0 14:48 ?        00:00:00 [ksoftirqd/2]
+root          28       2  0 14:48 ?        00:00:00 [kworker/2:0H-events_highpri]
+root          29       2  0 14:48 ?        00:00:00 [cpuhp/3]
+root          30       2  0 14:48 ?        00:00:00 [idle_inject/3]
+root          31       2  0 14:48 ?        00:00:00 [migration/3]
+root          32       2  0 14:48 ?        00:00:00 [ksoftirqd/3]
+root          34       2  0 14:48 ?        00:00:00 [kworker/3:0H-events_highpri]
+root          35       2  0 14:48 ?        00:00:00 [kdevtmpfs]
+root          36       2  0 14:48 ?        00:00:00 [netns]
+root          37       2  0 14:48 ?        00:00:00 [inet_frag_wq]
+root          38       2  0 14:48 ?        00:00:00 [kauditd]
+root          39       2  0 14:48 ?        00:00:00 [khungtaskd]
+root          40       2  0 14:48 ?        00:00:00 [oom_reaper]
+root          41       2  0 14:48 ?        00:00:00 [writeback]
+root          42       2  0 14:48 ?        00:00:00 [kcompactd0]
+root          43       2  0 14:48 ?        00:00:00 [ksmd]
+root          44       2  0 14:48 ?        00:00:00 [khugepaged]
+root          91       2  0 14:48 ?        00:00:00 [kintegrityd]
+root          92       2  0 14:48 ?        00:00:00 [kblockd]
+root          93       2  0 14:48 ?        00:00:00 [blkcg_punt_bio]
+root          96       2  0 14:48 ?        00:00:00 [tpm_dev_wq]
+root          97       2  0 14:48 ?        00:00:00 [ata_sff]
+root          98       2  0 14:48 ?        00:00:00 [md]
+root          99       2  0 14:48 ?        00:00:00 [edac-poller]
+root         100       2  0 14:48 ?        00:00:00 [devfreq_wq]
+root         102       2  0 14:48 ?        00:00:00 [watchdogd]
+root         103       2  0 14:48 ?        00:00:00 [kworker/3:1H-events_highpri]
+root         105       2  0 14:48 ?        00:00:00 [kswapd0]
+root         106       2  0 14:48 ?        00:00:00 [ecryptfs-kthrea]
+root         108       2  0 14:48 ?        00:00:00 [kthrotld]
+root         109       2  0 14:48 ?        00:00:00 [irq/123-pciehp]
+root         110       2  0 14:48 ?        00:00:00 [acpi_thermal_pm]
+root         112       2  0 14:48 ?        00:00:00 [vfio-irqfd-clea]
+root         114       2  0 14:48 ?        00:00:00 [mld]
+root         115       2  0 14:48 ?        00:00:00 [kworker/0:1H-kblockd]
+root         116       2  0 14:48 ?        00:00:00 [ipv6_addrconf]
+root         125       2  0 14:48 ?        00:00:00 [kstrp]
+root         128       2  0 14:48 ?        00:00:00 [zswap-shrink]
+root         129       2  0 14:48 ?        00:00:00 [kworker/u9:0-rb_allocator]
+root         138       2  0 14:48 ?        00:00:00 [charger_manager]
+root         187       2  0 14:48 ?        00:00:00 [irq/145-aerdrv]
+root         188       2  0 14:48 ?        00:00:00 [irq/145-pcie-dp]
+root         192       2  0 14:48 ?        00:00:00 [nvme-wq]
+root         193       2  0 14:48 ?        00:00:00 [nvme-reset-wq]
+root         194       2  0 14:48 ?        00:00:00 [nvme-delete-wq]
+root         195       2  0 14:48 ?        00:00:00 [scsi_eh_0]
+root         196       2  0 14:48 ?        00:00:00 [scsi_tmf_0]
+root         197       2  0 14:48 ?        00:00:00 [kworker/u8:4-i915]
+root         198       2  0 14:48 ?        00:00:00 [kworker/u8:5-events_unbound]
+root         200       2  0 14:48 ?        00:00:06 [irq/166-SYNA7DA]
+root         222       2  0 14:48 ?        00:00:00 [kworker/1:1H-kblockd]
+root         224       2  0 14:48 ?        00:00:00 [jbd2/nvme0n1p2-]
+root         225       2  0 14:48 ?        00:00:00 [ext4-rsv-conver]
+root         230       2  0 14:48 ?        00:00:00 [kworker/2:1H-events_highpri]
+root         266       1  0 14:48 ?        00:00:00 /lib/systemd/systemd-journald
+root         292       2  0 14:48 ?        00:00:00 [ipmi-msghandler]
+root         293       1  0 14:48 ?        00:00:00 /lib/systemd/systemd-udevd
+root         300       2  0 14:48 ?        00:00:00 [loop0]
+root         323       2  0 14:48 ?        00:00:00 [loop1]
+root         341       2  0 14:48 ?        00:00:00 [loop2]
+root         343       2  0 14:48 ?        00:00:00 [loop3]
+root         345       2  0 14:48 ?        00:00:00 [loop4]
+root         346       2  0 14:48 ?        00:00:00 [loop5]
+root         347       2  0 14:48 ?        00:00:00 [loop6]
+root         351       2  0 14:48 ?        00:00:00 [loop8]
+root         366       2  0 14:48 ?        00:00:00 [cfg80211]
+root         367       2  0 14:48 ?        00:00:00 [irq/171-mei_me]
+root         368       2  0 14:48 ?        00:00:00 [loop9]
+root         369       2  0 14:48 ?        00:00:00 [cryptd]
+root         376       2  0 14:48 ?        00:00:00 [loop10]
+root         379       2  0 14:48 ?        00:00:00 [irq/172-iwlwifi]
+root         381       2  0 14:48 ?        00:00:00 [irq/173-iwlwifi]
+root         383       2  0 14:48 ?        00:00:01 [irq/174-iwlwifi]
+root         384       2  0 14:48 ?        00:00:00 [irq/175-iwlwifi]
+root         388       2  0 14:48 ?        00:00:00 [irq/176-iwlwifi]
+root         390       2  0 14:48 ?        00:00:00 [irq/177-iwlwifi]
+root         409       2  0 14:48 ?        00:00:00 [card0-crtc0]
+root         412       2  0 14:48 ?        00:00:00 [card0-crtc1]
+root         413       2  0 14:48 ?        00:00:00 [card0-crtc2]
+root         414       2  0 14:48 ?        00:00:00 [card0-crtc3]
+root         415       2  0 14:48 ?        00:00:00 [loop11]
+root         470       2  0 14:48 ?        00:00:00 [loop12]
+root         542       2  0 14:48 ?        00:00:00 [kmemstick]
+systemd+     591       1  0 14:48 ?        00:00:00 /lib/systemd/systemd-resolved
+root         623       1  0 14:48 ?        00:00:00 /usr/lib/accountsservice/accounts-daemon
+root         624       1  0 14:48 ?        00:00:00 /usr/sbin/acpid
+avahi        626       1  0 14:48 ?        00:00:00 avahi-daemon: running [lahari.local]
+root         627       1  0 14:48 ?        00:00:00 /usr/sbin/cron -f
+root         629       1  0 14:48 ?        00:00:00 /usr/sbin/cupsd -l
+message+     630       1  0 14:48 ?        00:00:01 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root         632       1  0 14:48 ?        00:00:03 /usr/sbin/NetworkManager --no-daemon
+root         641       1  0 14:48 ?        00:00:00 /usr/sbin/irqbalance --foreground
+root         645       1  0 14:48 ?        00:00:00 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root         648       1  0 14:48 ?        00:00:00 /usr/lib/policykit-1/polkitd --no-debug
+syslog       651       1  0 14:48 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root         664       1  0 14:48 ?        00:00:00 /usr/libexec/switcheroo-control
+root         665       1  0 14:48 ?        00:00:00 /lib/systemd/systemd-logind
+root         666       1  0 14:48 ?        00:00:01 /usr/sbin/thermald --systemd --dbus-enable --adaptive
+root         667       1  0 14:48 ?        00:00:00 /usr/lib/udisks2/udisksd
+root         668       1  0 14:48 ?        00:00:00 /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant
+avahi        672     626  0 14:48 ?        00:00:00 avahi-daemon: chroot helper
+root         721       1  0 14:48 ?        00:00:00 /usr/sbin/cups-browsed
+root         724       1  0 14:48 ?        00:00:00 /usr/sbin/ModemManager
+root         727       1  0 14:48 ?        00:00:00 /usr/lib/bolt/boltd
+root         766       1  0 14:48 ?        00:00:00 /usr/sbin/gdm3
+mysql        779       1  0 14:48 ?        00:00:15 /usr/sbin/mysqld
+root         786       1  0 14:48 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+root         787     766  0 14:48 ?        00:00:00 gdm-session-worker [pam/gdm-autologin]
+user         804       1  0 14:48 ?        00:00:00 /lib/systemd/systemd --user
+user         805     804  0 14:48 ?        00:00:00 (sd-pam)
+user         820     804  0 14:48 ?        00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+user         822     804  0 14:48 ?        00:00:01 /usr/libexec/tracker-miner-fs
+root         823       2  0 14:48 ?        00:00:01 [kworker/u9:1+i915_flip]
+user         828       1  0 14:48 ?        00:00:00 /usr/bin/gnome-keyring-daemon --daemonize --login
+user         832     787  0 14:48 tty2     00:00:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+rtkit        833       1  0 14:48 ?        00:00:00 /usr/libexec/rtkit-daemon
+user         836     804  0 14:48 ?        00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+user         838     832  1 14:48 tty2     00:00:27 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+root         843       1  0 14:48 ?        00:00:00 /usr/lib/upower/upowerd
+user         850     804  0 14:48 ?        00:00:00 /usr/libexec/gvfsd
+user         858     804  0 14:48 ?        00:00:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+user         869     804  0 14:48 ?        00:00:00 /usr/libexec/gvfs-udisks2-volume-monitor
+user         918     804  0 14:48 ?        00:00:00 /usr/libexec/gvfs-afc-volume-monitor
+user         928     804  0 14:48 ?        00:00:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+user         932     804  0 14:48 ?        00:00:00 /usr/libexec/gvfs-goa-volume-monitor
+user         940     804  0 14:48 ?        00:00:00 /usr/libexec/goa-daemon
+user         966     804  0 14:48 ?        00:00:00 /usr/libexec/goa-identity-service
+user         971     804  0 14:48 ?        00:00:00 /usr/libexec/gvfs-mtp-volume-monitor
+user        1030     832  0 14:48 tty2     00:00:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+root        1044       1  0 14:48 ?        00:00:00 /usr/lib/bluetooth/bluetoothd
+user        1102    1030  0 14:48 ?        00:00:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+user        1122     804  0 14:48 ?        00:00:00 /usr/libexec/at-spi-bus-launcher
+user        1127    1122  0 14:48 ?        00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+user        1133     804  0 14:48 ?        00:00:00 /usr/libexec/gnome-session-ctl --monitor
+user        1140     804  0 14:48 ?        00:00:00 /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu
+user        1154     804  1 14:48 ?        00:00:30 /usr/bin/gnome-shell
+user        1178    1154  0 14:48 ?        00:00:00 ibus-daemon --panel disable --xim
+user        1182    1178  0 14:48 ?        00:00:00 /usr/libexec/ibus-dconf
+user        1183    1178  0 14:48 ?        00:00:00 /usr/libexec/ibus-extension-gtk3
+user        1185     804  0 14:48 ?        00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+user        1189     804  0 14:48 ?        00:00:00 /usr/libexec/ibus-portal
+user        1200     804  0 14:48 ?        00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+user        1204     804  0 14:48 ?        00:00:00 /usr/libexec/xdg-permission-store
+user        1206     804  0 14:48 ?        00:00:00 /usr/libexec/gnome-shell-calendar-server
+user        1215     804  0 14:48 ?        00:00:00 /usr/libexec/evolution-source-registry
+user        1224     804  0 14:48 ?        00:00:00 /usr/libexec/evolution-calendar-factory
+user        1229     804  0 14:48 ?        00:00:00 /usr/libexec/dconf-service
+user        1241     804  0 14:48 ?        00:00:00 /usr/libexec/evolution-addressbook-factory
+user        1262     804  0 14:48 ?        00:00:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+user        1270     850  0 14:48 ?        00:00:00 /usr/libexec/gvfsd-trash --spawner :1.4 /org/gtk/gvfs/exec_spaw/0
+user        1278     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-a11y-settings
+user        1279     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-color
+user        1280     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-datetime
+user        1282     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-housekeeping
+user        1283     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-keyboard
+user        1285     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-media-keys
+user        1289     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-power
+user        1290     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-print-notifications
+user        1291     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-rfkill
+user        1295     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-screensaver-proxy
+user        1296     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-sharing
+user        1297     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-smartcard
+user        1299     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-sound
+user        1300     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-usb-protection
+user        1301     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-wacom
+user        1308     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-wwan
+user        1310     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-xsettings
+user        1362    1140  0 14:48 ?        00:00:00 /usr/libexec/evolution-data-server/evolution-alarm-notify
+user        1368     804  0 14:48 ?        00:00:00 /usr/libexec/gsd-printer
+user        1387    1140  0 14:48 ?        00:00:00 /usr/libexec/gsd-disk-utility-notify
+user        1416    1178  0 14:48 ?        00:00:00 /usr/libexec/ibus-engine-simple
+colord      1425       1  0 14:48 ?        00:00:00 /usr/libexec/colord
+whoopsie    1486       1  0 14:48 ?        00:00:00 /usr/bin/whoopsie -f
+kernoops    1487       1  0 14:48 ?        00:00:00 /usr/sbin/kerneloops --test
+kernoops    1489       1  0 14:48 ?        00:00:00 /usr/sbin/kerneloops
+user        1597     804  0 14:49 ?        00:00:00 /usr/libexec/gvfsd-metadata
+user        1600    1140  0 14:49 ?        00:00:00 update-notifier
+root        1935       2  0 14:56 ?        00:00:00 [kworker/1:0-mm_percpu_wq]
+user        1977     850  0 14:58 ?        00:00:00 /usr/libexec/gvfsd-network --spawner :1.4 /org/gtk/gvfs/exec_spaw/1
+user        1989     850  0 14:58 ?        00:00:00 /usr/libexec/gvfsd-dnssd --spawner :1.4 /org/gtk/gvfs/exec_spaw/3
+root        2059       2  0 14:59 ?        00:00:00 [kworker/3:1-events]
+root        2174       2  0 15:04 ?        00:00:00 [kworker/2:1-events]
+root        2243       2  0 15:05 ?        00:00:00 [kworker/1:2-events]
+root        2448       2  0 15:09 ?        00:00:00 [kworker/3:2-events]
+root        2450       2  0 15:09 ?        00:00:00 [kworker/2:0-events]
+user        2495     804  1 15:11 ?        00:00:09 /usr/bin/nautilus --gapplication-service
+root        2521       2  0 15:11 ?        00:00:00 [kworker/0:0-events]
+root        2646       2  0 15:12 ?        00:00:00 [loop13]
+root        2691       1  0 15:12 ?        00:00:00 /usr/lib/snapd/snapd
+root        3055       2  0 15:17 ?        00:00:00 [kworker/0:1-events]
+user        3128     804  0 15:20 ?        00:00:00 /usr/libexec/gnome-terminal-server
+user        3136    3128  0 15:20 pts/0    00:00:00 bash
+root        3204       2  0 15:22 ?        00:00:00 [kworker/2:2]
+root        3217       2  0 15:23 ?        00:00:00 [kworker/u8:0]
+user        3221    3136  0 15:24 pts/0    00:00:00 ps -ef
+user@lahari:~/dir$ ps
+    PID TTY          TIME CMD
+   3136 pts/0    00:00:00 bash
+   3223 pts/0    00:00:00 ps
+user@lahari:~/dir$ ps -lm
+F S   UID     PID    PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+0 -  1000    3136    3128  0   -   - -  2687 -      pts/0    00:00:00 bash
+0 S  1000       -       -  0  80   0 -     - do_wai -        00:00:00 -
+0 -  1000    3224    3136  0   -   - -  2854 -      pts/0    00:00:00 ps
+0 R  1000       -       -  0  80   0 -     - -      -        00:00:00 -
+user@lahari:~/dir$ ps -ln
+F   UID     PID    PPID PRI  NI    VSZ   RSS  WCHAN STAT TTY        TIME COMMAND
+4  1000     832     787  20   0 164016  6312 ffffff Ssl+ tty2       0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu
+4  1000     838     832  20   0 490604 80084 ffffff Sl+  tty2       0:27 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+0  1000    1030     832  20   0 190652 15484 ffffff Sl+  tty2       0:00 /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu
+0  1000    3136    3128  20   0  10748  5064      1 Ss   pts/0      0:00 bash
+0  1000    3225    3136  20   0  11416  1136      - R+   pts/0      0:00 ps -ln
+user@lahari:~/dir$ ps -dir
+error: unsupported SysV option
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+user@lahari:~/dir$ top
+
+top - 15:28:00 up 39 min,  1 user,  load average: 0.43, 0.23, 0.18
+Tasks: 217 total,   1 running, 216 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  0.6 sy,  0.0 ni, 98.4 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :   7730.2 total,   5536.9 free,   1030.6 used,   1162.8 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6247.4 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                             
+   1154 user      20   0 4333576 255820 105072 S   2.6   3.2   0:33.44 gnome-shell                                                                                                                         
+    779 mysql     20   0 2380584 396164  37980 S   1.3   5.0   0:17.24 mysqld                                                                                                                              
+    838 user      20   0  506924  80084  48844 S   1.3   1.0   0:30.04 Xorg                                                                                                                                
+   3128 user      20   0  816400  52716  38780 S   1.3   0.7   0:04.48 gnome-terminal-                                                                                                                     
+   3229 user      20   0   11988   3936   3152 R   1.3   0.0   0:02.65 top                                                                                                                                 
+      1 root      20   0  168724  12512   8080 S   0.0   0.2   0:00.95 systemd                                                                                                                             
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd                                                                                                                            
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                                                              
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                                                          
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                                                         
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                                                        
+top - 15:32:30 up 43 min,  1 user,  load average: 0.09, 0.12, 0.14
+Tasks: 219 total,   1 running, 218 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.2 us,  0.8 sy,  0.0 ni, 97.9 id,  0.1 wa,  0.0 hi,  0.1 si,  0.0 st
+MiB Mem :   7730.2 total,   5520.3 free,   1030.4 used,   1179.5 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   6247.6 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                             
+   3128 user      20   0  816400  52716  38780 S   2.0   0.7   0:04.88 gnome-terminal-                                                                                                                     
+    838 user      20   0  506960  80084  48844 S   1.7   1.0   0:30.56 Xorg                                                                                                                                
+    200 root     -51   0       0      0      0 S   1.3   0.0   0:09.16 irq/166-SYNA7DA                                                                                                                     
+   1154 user      20   0 4333560 255764 105072 S   1.3   3.2   0:34.52 gnome-shell                                                                                                                         
+    779 mysql     20   0 2380584 396164  37980 S   0.7   5.0   0:19.24 mysqld                                                                                                                              
+   1200 user      20   0  162836   7620   6844 S   0.3   0.1   0:00.19 at-spi2-registr                                                                                                                     
+      1 root      20   0  168724  12512   8080 S   0.0   0.2   0:00.95 systemd                                                                                                                             
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd                                                                                                                            
+      3 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_gp                                                                                                                              
+      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 rcu_par_gp                                                                                                                          
+      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri                                                                                                         
+      9 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 mm_percpu_wq                                                                                                                        
+     10 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_rude_                                                                                                                     
+     11 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_tasks_trace                                                                                                                     
+     12 root      20   0       0      0      0 S   0.0   0.0   0:00.10 ksoftirqd/0                                                                                                                         
+     13 root      20   0       0      0      0 I   0.0   0.0   0:01.03 rcu_sched                                                                                                                           
+     14 root      rt   0       0      0      0 S   0.0   0.0   0:00.01 migration/0                                                                                                                         
+     15 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/0                                                                                                                       
+     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                                                                                                                             
+     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                                                                                                                             
+     18 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/1                                                                                                                       
+     19 root      rt   0       0      0      0 S   0.0   0.0   0:00.06 migration/1                                                                                                                         
+     20 root      20   0       0      0      0 S   0.0   0.0   0:00.06 ksoftirqd/1                                                                                                                         
+     22 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/1:0H-kblockd                                                                                                                
+     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/2                                                                                                                             
+     24 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/2                                                                                                                       
+     25 root      rt   0       0      0      0 S   0.0   0.0   0:00.07 migration/2                                                                                                                         
+     26 root      20   0       0      0      0 S   0.0   0.0   0:00.10 ksoftirqd/2                                                                                                                         
+     28 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/2:0H-events_highpri                                                                                                         
+     29 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/3                                                                                                                             
+     30 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_inject/3                                                                                                                       
+     31 root      rt   0       0      0      0 S   0.0   0.0   0:00.06 migration/3                                                                                                                         
+     32 root      20   0       0      0      0 S   0.0   0.0   0:00.05 ksoftirqd/3                                                                                                                         
+     34 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/3:0H-events_highpri                                                                                                         
+     35 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmpfs                                                                                                                           
+     36 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 netns                                                                                                                               
+     37 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 inet_frag_wq                                                                                                                        
+     38 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd                                                                                                                             
+     39 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungtaskd                                                                                                                          
+     40 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_reaper                                                                                                                          
+     41 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 writeback                                                                                                                           
+     42 root      20   0       0      0      0 S   0.0   0.0   0:00.09 kcompactd0                                                                                                                          
+     43 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd                                                                                                                                
+     44 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepaged                                                                                                                          
+     91 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kintegrityd                                                                                                                         
+     92 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kblockd                                                                                                                             
+     93 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 blkcg_punt_bio                                                                                                                      
+     96 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 tpm_dev_wq                                                                                                                          
+[1]+  Stopped                 top
+user@lahari:~/dir$ 
+
+
