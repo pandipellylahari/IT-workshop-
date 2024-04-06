@@ -1,0 +1,661 @@
+user@lahari:~$ cat> grepfilter.txt
+welcome to ubuntu
+hii this is linux/unix commands
+RGUKT
+user@lahari:~$ cat grepfilter.txt
+welcome to ubuntu
+hii this is linux/unix commands
+RGUKT
+user@lahari:~$ grep "rgukt" grepfilter.txt
+user@lahari:~$ cat> grepfilter.txt
+welcome to ubuntu
+hii this is linux/unix commands
+RGUK rajiv gandhi university of knowledge and technologies
+user@lahari:~$ grep "rgukt" grepfilter.txt
+user@lahari:~$ grep "RGUKT" grepfilter.txt
+user@lahari:~$ grep "RGUK" grepfilter.txt
+RGUK rajiv gandhi university of knowledge and technologies
+user@lahari:~$ grep 's/rgukt/UNIX/' grepfilter.txt
+user@lahari:~$ grep 's/rgukt/RGUKT/' grepfilter.txt
+user@lahari:~$ grep -n "unix" grepfilter.txt
+2:hii this is linux/unix commands
+user@lahari:~$ grep -h "unix" grepfilter.txt
+hii this is linux/unix commands
+user@lahari:~$ grep -l "unix" grepfilter.txt
+grepfilter.txt
+user@lahari:~$ grep -o "unix" grepfilter.txt
+unix
+user@lahari:~$ grep -i "unix" grepfilter.txt
+hii this is linux/unix commands
+user@lahari:~$ grep -v "unix" grepfilter.txt
+welcome to ubuntu
+RGUK rajiv gandhi university of knowledge and technologies
+user@lahari:~$ grep -e "unix" grepfilter.txt
+hii this is linux/unix commands
+user@lahari:~$ grep -c "unix" grepfilter.txt
+1
+user@lahari:~$ grep "^unix" grepfilter.txt
+user@lahari:~$ cat> geekfile.txt
+unix is great os.Unix is opensource
+learn operating system.
+user@lahari:~$ grep-o "o" greekfile.txt
+grep-o: command not found
+user@lahari:~$ grep 's/learn/UNIX/' greekfile.txt
+grep: greekfile.txt: No such file or directory
+user@lahari:~$ cat> grepfilter.txt
+welcome to ubuntu
+rgukt rajiv gandhi university of knowledge and technologies
+hii this is linux/unix commands
+user@lahari:~$ grep "rgukt" grepfilter.txt
+rgukt rajiv gandhi university of knowledge and technologies
+user@lahari:~$ cat> monthsfile.txt
+August
+April
+September
+June
+user@lahari:~$ &sort M monthsfile.txt
+bash: syntax error near unexpected token `&'
+user@lahari:~$ sort M monthsfile.txt
+sort: cannot read: M: No such file or directory
+user@lahari:~$ sort -M monthsfile.txt
+April
+June
+August
+September
+user@lahari:~$ sort -n monthsfile.txt
+April
+August
+June
+September
+user@lahari:~$ sort -N monthsfile.txt
+sort: invalid option -- 'N'
+Try 'sort --help' for more information.
+user@lahari:~$ sort -L monthsfile.txt
+sort: invalid option -- 'L'
+Try 'sort --help' for more information.
+user@lahari:~$ cat> monthsfile.txt
+January
+February
+March
+April
+August
+June
+December
+November
+October
+user@lahari:~$ sort -M monthsfile.txt
+January
+February
+March
+April
+June
+August
+October
+November
+December
+user@lahari:~$ cat> monthsfile.txt
+1
+9
+10
+11
+2
+8
+user@lahari:~$ sort -M monthsfile.txt
+1
+10
+11
+2
+8
+9
+user@lahari:~$ cat> numbersfile.txt
+3
+0
+9
+99
+18
+10
+35
+22
+14
+28
+user@lahari:~$ sort -M numbersfile.txt
+0
+10
+14
+18
+22
+28
+3
+35
+9
+99
+user@lahari:~$ sort -N numbersfile.txt
+sort: invalid option -- 'N'
+Try 'sort --help' for more information.
+user@lahari:~$ cat file.txt
+cat: file.txt: No such file or directory
+user@lahari:~$ cat> file.txt
+Raj
+Lahari
+Nithin
+Anitha
+user@lahari:~$ sort file.txt
+Anitha
+Lahari
+Nithin
+Raj
+user@lahari:~$ cat> file1.txt
+1
+4
+5
+2
+3
+8
+user@lahari:~$ sort file1.txt
+1
+2
+3
+4
+5
+8
+user@lahari:~$ cat>
+bash: syntax error near unexpected token `newline'
+user@lahari:~$ cat> geekfile.txt
+unix is great os
+learn operating system
+unix linux which one you choose
+user@lahari:~$ sed 's/unix/linux/' geekfile.txt
+linux is great os
+learn operating system
+linux linux which one you choose
+user@lahari:~$ sed 's/unix/linux/2' geekfile.txt
+unix is great os
+learn operating system
+unix linux which one you choose
+user@lahari:~$ sed 's/hello/HELLO/g' file1.txt
+1
+4
+5
+2
+3
+8
+user@lahari:~$ sed 's/hello/HELLO/g' file2.txt
+sed: can't read file2.txt: No such file or directory
+user@lahari:~$ sort -r monthsfile.txt
+9
+8
+2
+11
+10
+1
+user@lahari:~$ sort -o file1.txt
+user@lahari:~$ 
+user@lahari:~$ cat> file2.txt
+hello
+user@lahari:~$ sed 's/hello/HELLO/g' file2.txt
+HELLO
+user@lahari:~$ chmod u+x file1.txt
+user@lahari:~$ chmod u+x file1
+chmod: cannot access 'file1': No such file or directory
+user@lahari:~$ sed 's/unix/UNIX/g' geekfile.txt
+UNIX is great os
+learn operating system
+UNIX linux which one you choose
+user@lahari:~$ shutdown -r +5
+Shutdown scheduled for Tue 2024-03-26 15:06:19 UTC, use 'shutdown -c' to cancel.
+user@lahari:~$ shutdown -c
+user@lahari:~$ shutdown -c +5
+user@lahari:~$ shutdown -r +2
+Shutdown scheduled for Tue 2024-03-26 15:05:37 UTC, use 'shutdown -c' to cancel.
+user@lahari:~$ shutdown -c
+user@lahari:~$ awk file3.txt
+awk: 1: unexpected character '.'
+user@lahari:~$ awk file1.txt
+awk: 1: unexpected character '.'
+user@lahari:~$ awk file1txt
+ramu
+raj  id=245
+nithin id=897
+user@lahari:~$ awk '{print $1,$3}' awkfile1.txt
+awk: cannot open awkfile1.txt (No such file or directory)
+user@lahari:~$ awk '{print $1,$3}' awk file1.txt
+awk: cannot open awk (No such file or directory)
+user@lahari:~$ awk '{print $1,$3}' awk file1txt
+awk: cannot open awk (No such file or directory)
+user@lahari:~$ cat> awkfile1.txt
+ramu storage id=7866
+raj window id 7665
+john unix id 7574
+user@lahari:~$ awk '{print $1,$3}' awkfile1.txt
+ramu id=7866
+raj id
+john id
+user@lahari:~$ free m
+              total        used        free      shared  buff/cache   available
+Mem:        7915756     1129948     5548336      197920     1237472     6329640
+Swap:       2097148           0     2097148
+user@lahari:~$ free m |awk '/mem/'
+user@lahari:~$ awk '/mem/{print}' free -m
+awk: cannot open free (No such file or directory)
+user@lahari:~$ awk 'NR==2{printNR,$0}' free -m
+awk: line 1: syntax error at or near ,
+user@lahari:~$ awk '{print $2}' awkfile1.txt
+storage
+window
+unix
+user@lahari:~$ awk '{print $1}' awkfile1.txt
+ramu
+raj
+john
+user@lahari:~$  ftp://ftp.dlptest.com/
+bash: ftp://ftp.dlptest.com/: No such file or directory
+user@lahari:~$  ftp://ftp.dlptest.com/ft
+bash: ftp://ftp.dlptest.com/ft: No such file or directory
+user@lahari:~$  ftp://ftp.dlptest.com/
+bash: ftp://ftp.dlptest.com/: No such file or directory
+user@lahari:~$ ftp  ftp://ftp.dlptest.com/
+ftp: ftp://ftp.dlptest.com/: Name or service not known
+ftp> ^cest.com/
+?Invalid command
+ftp> exit
+user@lahari:~$ ftp  ftp://ftp.dlptest.com/
+ftp: ftp://ftp.dlptest.com/: Name or service not known
+ftp> dlpuser
+?Invalid command
+ftp> Password: rNrKYTX9g7z3RgJRmxWuGHbeu
+?Invalid command
+ftp> exit
+user@lahari:~$ ftp  ftp.dlptest.com
+Connected to ftp.dlptest.com.
+220 Welcome to the DLP Test FTP Server
+Name (ftp.dlptest.com:user): dlpuser
+331 Please specify the password.
+Password:
+
+530 Login incorrect.
+Login failed.
+ftp> 
+ftp> exit
+221 Goodbye.
+user@lahari:~$ ftp  ftp.dlptest.com
+Connected to ftp.dlptest.com.
+220 Welcome to the DLP Test FTP Server
+Name (ftp.dlptest.com:user): dlpuser
+331 Please specify the password.
+Password:
+530 Login incorrect.
+Login failed.
+ftp> exit
+221 Goodbye.
+user@lahari:~$ ftp  ftp.dlptest.com
+Connected to ftp.dlptest.com.
+220 Welcome to the DLP Test FTP Server
+Name (ftp.dlptest.com:user): dlpuser
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001      3706128 Mar 26 10:21 HTTP_3m.xlsx
+-rw-r--r--    1 1001     1001     52228952 Mar 26 10:21 HTTP_50m.xlsx
+-rw-r--r--    1 1001     1001            0 Mar 26 10:27 actorstoday.txt
+-rw-r--r--    1 1001     1001            0 Mar 26 10:27 actorstomorrow.txt
+-rw-r--r--    1 1001     1001           17 Mar 26 10:22 catalogo_invelon.csv
+-rw-r--r--    1 1001     1001     10874339 Mar 26 10:26 test.csv
+-rw-r--r--    1 1001     1001         1510 Mar 26 10:23 test.txt
+-rw-r--r--    1 1001     1001          144 Mar 26 10:25 test.zip
+-rw-r--r--    1 1001     1001          969 Mar 26 10:21 ????????????.txt
+226 Directory send OK.
+ftp> get  test.csv
+local: test.csv remote: test.csv
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for test.csv (10874339 bytes).
+
+
+
+
+
+
+
+ test.csv
+
+226 Transfer complete.
+10874339 bytes received in 59.32 secs (179.0131 kB/s)
+ftp> 
+ftp> 
+ftp> 
+ftp> 
+ftp> 
+ftp> 
+ftp> 
+ftp>  test.csv
+?Invalid command
+ftp> 
+ftp> exit
+221 Goodbye.
+user@lahari:~$ ftp  ftp.dlptest.com
+Connected to ftp.dlptest.com.
+220 Welcome to the DLP Test FTP Server
+Name (ftp.dlptest.com:user): dlpuser
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-r--r--    1 1001     1001        85828 Mar 26 10:28 FileGd.090b88a689884_6384.pdf
+-rw-r--r--    1 1001     1001        85814 Mar 26 10:28 FileGd.3e558130a9634_6384.pdf
+-rw-r--r--    1 1001     1001        85816 Mar 26 10:28 FileGd.614155ca9d304_6384.pdf
+-rw-r--r--    1 1001     1001        85812 Mar 26 10:28 FileGd.d75a31abef104_6384.pdf
+-rw-r--r--    1 1001     1001      3706128 Mar 26 10:21 HTTP_3m.xlsx
+-rw-r--r--    1 1001     1001     52228952 Mar 26 10:21 HTTP_50m.xlsx
+drwxr-xr-x    3 1001     1001           18 Mar 26 10:27 Vorne
+-rw-r--r--    1 1001     1001            0 Mar 26 10:29 actorstoday.txt
+-rw-r--r--    1 1001     1001            0 Mar 26 10:29 actorstomorrow.txt
+-rw-r--r--    1 1001     1001           17 Mar 26 10:28 catalogo_invelon.csv
+-rw-r--r--    1 1001     1001         1510 Mar 26 10:23 test.txt
+-rw-r--r--    1 1001     1001          144 Mar 26 10:25 test.zip
+226 Directory send OK.
+ftp> get FileGd.090b88a689884_6384.pdf
+local: FileGd.090b88a689884_6384.pdf remote: FileGd.090b88a689884_6384.pdf
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for FileGd.090b88a689884_6384.pdf (85810 bytes).
+226 Transfer complete.
+85810 bytes received in 1.43 secs (58.5987 kB/s)
+ftp> exit
+221 Goodbye.
+user@lahari:~$ ssh sujoysarkar@tty.sdf.org
+The authenticity of host 'tty.sdf.org (209.160.32.186)' can't be established.
+ED25519 key fingerprint is SHA256:ZjwbO7AU8rHJExYrmZS2LqGZ7WfdoELfMrF54W92PYA.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'tty.sdf.org,209.160.32.186' (ED25519) to the list of known hosts.
+sujoysarkar@tty.sdf.org's password: 
+Connection closed by 209.160.32.186 port 22
+user@lahari:~$ ssh lahari@tty.sdf.org
+Warning: Permanently added the ED25519 host key for IP address '205.166.94.4' to the list of known hosts.
+lahari@tty.sdf.org's password: 
+Connection closed by 205.166.94.4 port 22
+user@lahari:~$ ls -lrt
+total 12740
+drwxr-xr-x 2 user user     4096 Mar 16  2022  Templates
+drwxr-xr-x 2 user user     4096 Mar 16  2022  Public
+drwxr-xr-x 2 user user     4096 Mar 16  2022  Music
+-rw-rw-r-- 1 user user       66 Jan  4  2023  helloworld.c
+-rw-rw-r-- 1 user user      193 Jan  4  2023  even.c
+-rw-rw-r-- 1 user user      232 Jan 25  2023  operator.c
+-rw-rw-r-- 1 user user   766473 Jan 31  2023  pic.jpg
+-rw-rw-r-- 1 user user      143 Feb 24  2023  square.c
+-rw-rw-r-- 1 user user      169 Feb 24  2023  spherev.c
+-rw-rw-r-- 1 user user      214 Feb 27  2023  age.c
+-rw-rw-r-- 1 user user      251 Feb 27  2023  profit.c
+-rw-rw-r-- 1 user user      298 Feb 27  2023  adm.c
+-rw-rw-r-- 1 user user       94 Feb 28  2023  cod.c
+-rw-rw-r-- 1 user user      261 Feb 28  2023  sph.c
+-rw-rw-r-- 1 user user      289 Feb 28  2023  con.c
+-rw-rw-r-- 1 user user      134 Feb 28  2023  cube.c
+-rw-rw-r-- 1 user user       84 Feb 28  2023  log.c
+-rw-rw-r-- 1 user user       64 Feb 28  2023  1.c
+-rw-rw-r-- 1 user user      214 Feb 28  2023  per.c
+-rw-rw-r-- 1 user user      401 Mar  1  2023  ma.c
+-rw-rw-r-- 1 user user      264 Mar  2  2023  gcd.c
+-rw-rw-r-- 1 user user      612 Mar  5  2023  elect.c
+-rw-rw-r-- 1 user user      221 Mar  5  2023  perf.c
+-rw-rw-r-- 1 user user      164 Mar  5  2023  right.c
+-rw-rw-r-- 1 user user      118 Mar  8  2023  pat.c
+-rw-rw-r-- 1 user user      118 Mar  8  2023  eq.c
+-rw-rw-r-- 1 user user      193 Mar 11  2023  get.c
+-rw-rw-r-- 1 user user      244 Mar 11  2023  strlen.c
+-rw-rw-r-- 1 user user      555 Mar 15  2023  arr.c
+-rw-rw-r-- 1 user user      500 Mar 15  2023  mean.c
+-rw-rw-r-- 1 user user      890 Mar 15  2023  mult.c
+-rw-rw-r-- 1 user user      264 Mar 20  2023  perfect.c
+-rw-rw-r-- 1 user user      188 Mar 20  2023  equ.c
+-rw-rw-r-- 1 user user      239 Mar 23  2023  fun.c
+-rw-rw-r-- 1 user user      290 Mar 28  2023  fib.c
+-rw-rw-r-- 1 user user      228 Mar 29  2023  gcdd.c
+-rw-rw-r-- 1 user user      434 Mar 29  2023  nonrec.c
+-rw-rw-r-- 1 user user      250 Mar 29  2023  nonrecgcd.c
+-rw-rw-r-- 1 user user      313 Mar 29  2023  pow.c
+-rw-rw-r-- 1 user user      308 Mar 29  2023  strpalin.c
+-rw-rw-r-- 1 user user      363 Mar 29  2023  strse.c
+-rw-rw-r-- 1 user user      244 Apr 12  2023  binary.c
+-rw-rw-r-- 1 user user      213 Apr 13  2023  rom.c
+-rw-rw-r-- 1 user user      252 Apr 20  2023  call.c
+-rw-rw-r-- 1 user user      435 Apr 23  2023  bubble.c
+-rw-rw-r-- 1 user user      208 Apr 23  2023  prime.c
+-rw-rw-r-- 1 user user      497 Apr 24  2023  std.c
+-rw-rw-r-- 1 user user      676 Apr 24  2023  binarysearch.c
+-rw-rw-r-- 1 user user      236 Apr 30  2023  getch.c
+-rw-rw-r-- 1 user user      296 Apr 30  2023  getchar.c
+-rw-rw-r-- 1 user user      227 May  1  2023  struct.c
+-rw-rw-r-- 1 user user      406 Jun 23  2023  stack.c
+-rw-rw-r-- 1 user user      377 Jun 23  2023  exp.c
+-rw-rw-r-- 1 user user      628 Jun 23  2023  op.c
+-rw-rw-r-- 1 user user     4589 Jun 30  2023  single.c
+-rw-rw-r-- 1 user user      990 Jun 30  2023  stackop.c
+-rw-rw-r-- 1 user user     2200 Jul  7  2023  expres.c
+-rw-rw-r-- 1 user user     4480 Jul  7  2023  singlell.c
+-rw-rw-r-- 1 user user     1126 Jul  7  2023  queue.c
+-rw-rw-r-- 1 user user     1008 Jul 14  2023  in.c
+-rw-rw-r-- 1 user user      354 Jul 14  2023  insert.c
+-rw-rw-r-- 1 user user      687 Aug 11  2023  quick.c
+-rw-rw-r-- 1 user user     1311 Aug 25  2023  merge.c
+-rw-rw-r-- 1 user user      847 Sep  1  2023  bst.c
+-rw-rw-r-- 1 user user     1603 Sep  1  2023  bst1.c
+drwxrwxr-x 2 user user     4096 Sep 12  2023  DS
+drwx------ 3 user user     4096 Oct 23 10:03  snap
+-rw-rw-r-- 1 user user      126 Nov  6 14:32  hello.java
+-rw-rw-r-- 1 user user      252 Nov  6 14:41  simple.java
+-rw-rw-r-- 1 user user      637 Nov  6 15:38  calci.java
+-rw-rw-r-- 1 user user      749 Nov 10 15:32  mysql
+-rw-rw-r-- 1 user user      587 Nov 13 14:14  biggest.java
+-rw-rw-r-- 1 user user      597 Nov 13 14:15  calcii.java
+-rw-rw-r-- 1 user user      388 Nov 13 14:16  palindrome.java
+-rw-rw-r-- 1 user user      648 Nov 13 14:17  roots.java
+-rw-rw-r-- 1 user user      342 Nov 13 14:41  test.java
+-rw-rw-r-- 1 user user      328 Nov 13 14:47  prime.java
+-rw-rw-r-- 1 user user     8797 Nov 17 15:29  sailor
+-rw-rw-r-- 1 user user    12592 Nov 17 16:47  boats
+-rw-rw-r-- 1 user user      310 Nov 20 14:37  sort.java
+-rw-rw-r-- 1 user user      646 Nov 20 15:08  add.java
+-rw-rw-r-- 1 user user      308 Nov 20 15:12  list.java
+-rw-rw-r-- 1 user user      733 Nov 20 15:26  multiply.java
+-rw-rw-r-- 1 user user    22536 Nov 24 16:34  stud
+-rw-rw-r-- 1 user user      447 Dec  9 10:54  Test.java
+-rw-rw-r-- 1 user user      654 Dec  9 11:04  sampleinheritance.java
+-rw-rw-r-- 1 user user      404 Dec 11 13:58  test1.java
+-rw-rw-r-- 1 user user      490 Dec 11 15:09  cmp.java
+-rw-rw-r-- 1 user user      440 Dec 11 15:12  eql.java
+-rw-rw-r-- 1 user user      805 Dec 12 18:11  lin.class
+-rw-rw-r-- 1 user user     1413 Dec 13 15:33  multimatrix.java
+-rw-rw-r-- 1 user user     1488 Dec 13 15:33  addition.java
+-rw-rw-r-- 1 user user      217 Dec 13 16:03  length.java
+-rw-rw-r-- 1 user user      667 Dec 13 16:03  lenth.class
+-rw-rw-r-- 1 user user      271 Dec 13 16:08  reverse.java
+-rw-rw-r-- 1 user user      332 Dec 13 16:16  substring.java
+-rw-rw-r-- 1 user user      538 Dec 13 19:14  shape.java
+-rw-rw-r-- 1 user user      538 Dec 13 19:15  sampleabstract.java
+-rw-rw-r-- 1 user user      419 Dec 13 19:16  shape.class
+-rw-rw-r-- 1 user user      324 Dec 13 19:16  rect.class
+-rw-rw-r-- 1 user user      312 Dec 13 19:16  circle.class
+-rw-rw-r-- 1 user user      541 Dec 13 19:16  sampleabstract.class
+-rw-rw-r-- 1 user user    40962 Dec 15 16:44  LMS
+-rw-rw-r-- 1 user user     1450 Dec 18 14:04  Count.class
+-rw-rw-r-- 1 user user      569 Dec 18 14:05  alphabets.java
+-rw-rw-r-- 1 user user     1458 Dec 18 14:05  alphabets.class
+-rw-rw-r-- 1 user user      222 Dec 18 14:08  upper.java
+-rw-rw-r-- 1 user user      644 Dec 18 14:08  upper.class
+-rw-rw-r-- 1 user user      750 Dec 18 14:11  substring.class
+-rw-rw-r-- 1 user user      183 Dec 18 14:18  commandline.java
+-rw-rw-r-- 1 user user      533 Dec 18 14:18  Commandline.class
+-rw-rw-r-- 1 user user      496 Dec 18 14:26  eqls.java
+-rw-rw-r-- 1 user user    20819 Dec 19 16:04  dual
+-rw-rw-r-- 1 user user     1360 Dec 21 15:13  test3.java
+-rw-rw-r-- 1 user user      361 Dec 21 15:20  product.class
+-rw-rw-r-- 1 user user     1783 Dec 21 15:20  test3.class
+-rw-rw-r-- 1 user user      801 Dec 21 16:24  reverse.class
+-rw-rw-r-- 1 user user     1444 Dec 21 16:25  eqls.class
+-rw-rw-r-- 1 user user      570 Jan  5 16:41 'Library management'
+-rw-rw-r-- 1 user user     1226 Jan  8 14:12  week3.java
+-rw-rw-r-- 1 user user      967 Jan  8 14:16  week3.class
+-rw-rw-r-- 1 user user      376 Jan  8 14:38  test4.java
+-rw-rw-r-- 1 user user      925 Jan  8 16:04  Shape.java
+-rw-rw-r-- 1 user user      240 Jan  8 16:04  Shape.class
+-rw-rw-r-- 1 user user      302 Jan  8 16:04  Circle.class
+-rw-rw-r-- 1 user user      331 Jan  8 16:04  Triangle.class
+-rw-rw-r-- 1 user user      608 Jan  8 16:04  week6.class
+-rw-rw-r-- 1 user user      939 Jan  8 16:15  week6.java
+-rw-rw-r-- 1 user user      390 Jan  8 16:23  Sum.java
+-rw-rw-r-- 1 user user       35 Jan 16 19:11  pyfile.txt
+-rw-rw-r-- 1 user user        0 Jan 16 19:47  fopen.py
+-rw-rw-r-- 1 user user     8932 Jan 29 16:55  imternal
+-rw-rw-r-- 1 user user      114 Jan 30 14:15  Hello.java
+-rw-rw-r-- 1 user user      415 Jan 30 14:16  Hello.class
+-rw-rw-r-- 1 user user      133 Jan 30 14:31  java
+-rw-rw-r-- 1 user user      796 Jan 30 15:11  test11.java
+-rw-rw-r-- 1 user user     1557 Jan 30 15:11  test11.class
+-rw-rw-r-- 1 user user      103 Jan 30 15:33  B.java
+-rw-rw-r-- 1 user user      347 Jan 30 15:34  pkg1.java
+-rw-rw-r-- 1 user user      347 Jan 30 15:34  A.java
+drwxrwxr-x 2 user user     4096 Jan 30 15:34  pkg2
+drwxrwxr-x 2 user user     4096 Jan 30 15:35  pkg1
+-rw-rw-r-- 1 user user      143 Jan 30 15:36  main.java
+-rw-rw-r-- 1 user user      197 Jan 30 15:54  Triangle.java
+-rw-rw-r-- 1 user user      158 Jan 30 15:56  Square.java
+drwxrwxr-x 2 user user     4096 Jan 30 16:11  shapes
+-rw-rw-r-- 1 user user      385 Jan 30 16:11  week8.java
+-rw-rw-r-- 1 user user      349 Jan 30 16:11  main.class
+-rw-rw-r-- 1 user user      787 Jan 30 16:12  week8.class
+-rw-rw-r-- 1 user user      112 Jan 30 16:16  CSE.java
+-rw-rw-r-- 1 user user      110 Jan 30 16:17  ECE.java
+-rw-rw-r-- 1 user user      123 Jan 30 16:18  ME.java
+-rw-rw-r-- 1 user user      136 Jan 30 16:19  CE.java
+-rw-rw-r-- 1 user user      739 Jan 31 15:04  test12.java
+-rw-rw-r-- 1 user user      828 Jan 31 15:09  quad.java
+-rw-rw-r-- 1 user user     1102 Jan 31 15:09  test12.class
+-rw-rw-r-- 1 user user      718 Jan 31 15:09  quad.class
+-rw-rw-r-- 1 user user     1283 Jan 31 15:18  Prime.class
+-rw-rw-r-- 1 user user      573 Jan 31 15:18  Prime.java
+-rw-rw-r-- 1 user user      420 Jan 31 15:30  Palin.java
+-rw-rw-r-- 1 user user      429 Jan 31 15:36  LarSmall.java
+-rw-rw-r-- 1 user user     1273 Jan 31 15:36  LarSmall.class
+-rw-rw-r-- 1 user user      835 Jan 31 15:56  numsort.class
+-rw-rw-r-- 1 user user      741 Jan 31 16:06  numsort.java
+-rw-rw-r-- 1 user user      752 Jan 31 16:10  lin.java
+-rw-rw-r-- 1 user user      913 Feb  4 19:07  binary.java
+-rw-rw-r-- 1 user user      795 Feb  4 19:07  binary.class
+-rw-rw-r-- 1 user user     1435 Feb  4 19:07  test.class
+-rw-rw-r-- 1 user user      711 Feb  4 20:54  random.java
+-rw-rw-r-- 1 user user     1261 Feb  4 20:54  random.class
+-rw-rw-r-- 1 user user      390 Feb  5 08:41  Java.java
+-rw-rw-r-- 1 user user     1247 Feb  5 08:41  Java.class
+-rw-rw-r-- 1 user user     1130 Feb  5 08:43  Week1.java
+-rw-rw-r-- 1 user user     1645 Feb  5 08:43  Week1.class
+-rw-rw-r-- 1 user user      187 Feb  6 14:51  l.java
+-rw-rw-r-- 1 user user      475 Feb  6 14:51  l.class
+-rw-rw-r-- 1 user user      187 Feb  6 15:18  main1.java
+-rw-rw-r-- 1 user user      490 Feb  6 15:18  main1.class
+-rw-rw-r-- 1 user user      868 Feb  6 15:58  main3.java
+-rw-rw-r-- 1 user user      215 Feb  6 15:58  employee.class
+-rw-rw-r-- 1 user user      848 Feb  6 15:58  WE.class
+-rw-rw-r-- 1 user user      848 Feb  6 15:58  HE.class
+-rw-rw-r-- 1 user user      840 Feb  6 15:58  main3.class
+-rw-rw-r-- 1 user user      252 Feb  6 21:21  dog.class
+-rw-rw-r-- 1 user user     2955 Feb  6 21:23  test13.java
+-rw-rw-r-- 1 user user     1051 Feb  8 20:57  main21.java
+-rw-rw-r-- 1 user user      171 Feb  8 20:57  inventory.class
+-rw-rw-r-- 1 user user     1001 Feb  8 20:57  clothing.class
+-rw-rw-r-- 1 user user     1003 Feb  8 20:57  electronic.class
+-rw-rw-r-- 1 user user      901 Feb  8 20:57  main21.class
+-rw-rw-r-- 1 user user    30479 Feb  9 16:11  trigger
+-rw-rw-r-- 1 user user     1674 Feb  9 20:46  vehiclemain.java
+-rw-rw-r-- 1 user user     1417 Feb  9 20:47  vehicle.class
+-rw-rw-r-- 1 user user      435 Feb  9 20:47  twowheeler.class
+-rw-rw-r-- 1 user user      436 Feb  9 20:47  fourwheeler.class
+-rw-rw-r-- 1 user user     1562 Feb  9 20:47  vehiclemain.class
+-rw-rw-r-- 1 user user      567 Feb  9 20:59  Rethrown.java
+-rw-rw-r-- 1 user user     1426 Feb  9 21:02  Rethrown.class
+-rw-rw-r-- 1 user user     1270 Feb 10 21:39  Main.class
+-rw-rw-r-- 1 user user      508 Feb 10 21:49  Superclass.java
+-rw-rw-r-- 1 user user      455 Feb 10 22:02  Main.java
+-rw-rw-r-- 1 user user      277 Feb 10 22:06  ExceptionLa.java
+-rw-rw-r-- 1 user user     1134 Feb 10 22:06  ExceptionLa.class
+-rw-rw-r-- 1 user user      283 Feb 11 09:40  week9.java
+-rw-rw-r-- 1 user user      717 Feb 11 09:40  week9.class
+-rw-rw-r-- 1 user user      503 Feb 11 09:43  Characters.java
+-rw-rw-r-- 1 user user     1589 Feb 11 09:43  Characters.class
+-rw-rw-r-- 1 user user      522 Feb 11 10:14  keyword.java
+-rw-rw-r-- 1 user user      325 Feb 11 10:14  MyException.class
+-rw-rw-r-- 1 user user     1138 Feb 11 10:14  keyword.class
+-rw-rw-r-- 1 user user      600 Feb 11 10:38  TrafficLightsThread.java
+-rwxrwxr-x 1 user user    16936 Feb 11 11:18  a.out
+-rw-rw-r-- 1 user user      307 Feb 12 22:44  MyThread.java
+-rw-rw-r-- 1 user user     1037 Feb 12 22:45  MyThread.class
+-rw-rw-r-- 1 user user      482 Feb 12 23:03  ConsumerThread.java
+-rw-rw-r-- 1 user user      947 Feb 12 23:03  ConsumerThread.class
+-rw-rw-r-- 1 user user      350 Feb 14 16:32  AwtProg1.java
+-rw-rw-r-- 1 user user      707 Feb 14 16:32  AwtProg1.class
+-rw-rw-r-- 1 user user      728 Feb 14 16:56  Simple.class
+-rw-rw-r-- 1 user user      302 Feb 14 17:01  Simple.java
+drwxr-xr-x 2 user user     4096 Feb 14 19:06  Documents
+-rw-rw-r-- 1 user user     1038 Feb 22 17:25  AwtApp.class
+-rw-rw-r-- 1 user user      492 Mar  3 16:13  main56.java
+-rw-rw-r-- 1 user user      336 Mar  3 16:13  Rectangle.class
+-rw-rw-r-- 1 user user      289 Mar  3 16:13  square.class
+-rw-rw-r-- 1 user user      964 Mar  3 20:21  AwtApp.java
+-rw-rw-r-- 1 user user     1336 Mar 13 19:08  bookticket.java
+-rw-rw-r-- 1 user user     1338 Mar 13 19:13  TrainThread.java
+-rw-rw-r-- 1 user user     1357 Mar 13 21:30  bookticket.class
+-rw-rw-r-- 1 user user      401 Mar 13 21:30  passenger.class
+-rw-rw-r-- 1 user user      945 Mar 13 21:30  TrainThread.class
+-rw-rw-r-- 1 user user     2085 Mar 15 09:44  multi.class
+-rw-rw-r-- 1 user user     1145 Mar 15 09:44  multi.java
+-rw-rw-r-- 1 user user      108 Mar 18 09:26  a.html
+-rw-rw-r-- 1 user user      826 Mar 18 15:17  web.html
+drwxr-xr-x 9 user user     4096 Mar 18 15:32  Desktop
+-rw-rw-r-- 1 user user      373 Mar 19 10:47  webpage.html
+-rw-rw-r-- 1 user user     2241 Mar 19 11:02  registration.html
+drwxrwxr-x 2 user user     4096 Mar 19 14:59 'NITHIN 2004'
+-rw-rw-r-- 1 user user        6 Mar 19 15:12  file2:home
+-rw-rw-r-- 1 user user       23 Mar 19 15:15  file4:home
+drwxrwxr-x 2 user user     4096 Mar 19 15:16  dir1
+-rw-rw-r-- 1 user user       27 Mar 19 15:20  file11
+-rw-rw-r-- 1 user user        7 Mar 19 15:21  file12
+drwxrwxr-x 2 user user     4096 Mar 19 15:23  dir
+-rw-rw-r-- 1 user user    37390 Mar 19 15:33 'unix commands'
+-rw-rw-r-- 1 user user      519 Mar 19 18:11  java.html
+-rw-rw-r-- 1 user user      332 Mar 21 14:22  l.html
+-rw-rw-r-- 1 user user      486 Mar 21 14:39  p.html
+-rw-rw-r-- 1 user user      687 Mar 21 14:48  j.html
+-rw-rw-r-- 1 user user      754 Mar 21 14:59  l1.html
+-rw-rw-r-- 1 user user      758 Mar 21 15:11  lab.html
+-rw-rw-r-- 1 user user      353 Mar 21 15:26  mouse.html
+-rw-rw-r-- 1 user user      269 Mar 21 15:50  lab1.html
+-rw-rw-r-- 1 user user      313 Mar 21 15:53  js.html
+-rw-rw-r-- 1 user user      328 Mar 21 16:17  change.html
+drwxr-xr-x 2 user user     4096 Mar 21 16:22  Downloads
+drwxr-xr-x 3 user user     4096 Mar 21 16:25  Pictures
+-rw-rw-r-- 1 user user      356 Mar 21 21:43  time.html
+-rw-rw-r-- 1 user user      456 Mar 22 16:02  b.html
+-rw-rw-r-- 1 user user     2018 Mar 22 16:02  MyWebPage.html
+-rw-rw-r-- 1 user user     1777 Mar 22 16:21  t.html
+drwxr-xr-x 2 user user     4096 Mar 25 14:18  Videos
+-rw-rw-r-- 1 user user      110 Mar 26 14:25  grepfilter.txt
+-rw-rw-r-- 1 user user       14 Mar 26 14:34  monthsfile.txt
+-rw-rw-r-- 1 user user       27 Mar 26 14:34  numbersfile.txt
+-rw-rw-r-- 1 user user       25 Mar 26 14:36  file.txt
+-rw-rw-r-- 1 user user       72 Mar 26 14:39  geekfile.txt
+-rwxrw-r-- 1 user user        0 Mar 26 14:42  file1.txt
+-rw-rw-r-- 1 user user        6 Mar 26 14:44  file2.txt
+-rw-rw-r-- 1 user user       58 Mar 26 15:17  awkfile1.txt
+-rw-rw-r-- 1 user user 10874339 Mar 26 15:53  test.csv
+-rw-rw-r-- 1 user user    85810 Mar 26 15:55  FileGd.090b88a689884_6384.pdf
+-rw-rw-r-- 1 user user    10521 Mar 26 16:26  unix-2
+user@lahari:~$ chmod u+x file1.txt
+user@lahari:~$ chmod u-x file1.txt
+user@lahari:~$ 
